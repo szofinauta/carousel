@@ -1,3 +1,8 @@
 h1 {
   color: palevioletred;
 }
+
+.arrow {
+  fill: #4e4e4e;
+  fill-rule: evenodd;
+}
