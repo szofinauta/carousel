@@ -6,3 +6,7 @@ h1 {
   fill: #4e4e4e;
   fill-rule: evenodd;
 }
+
+#right-arrow {
+  transform: rotateY(3.142rad);
+}
