@@ -10,40 +10,37 @@
 </head>
 
 <body>
-  <main>
+  <main class="photo-viewer">
 
     <!-- left arrow -->
-    <nav id="left-container" role="navigation" aria-label="left">
-      <button id="left-button" data-message="To the left">
-        <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" width="14.906" height="22.75"
-          viewBox="0 0 14.906 22.75">
-          <path data-name="Left Arrow" class="arrow"
-            d="M129.01,311.107a2.45,2.45,0,0,1-3.536,0L114.868,300.5l10.606-10.607a2.5,2.5,0,1,1,3.536,3.536l-7.071,7.071,7.071,7.071A2.449,2.449,0,0,1,129.01,311.107Z"
-            transform="translate(-114.875 -289.125)" />
-        </svg>
-      </button>
-    </nav>
+    <button id="left-button" data-message="To the left">
+      <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" width="14.906" height="22.75" viewBox="0 0 14.906 22.75">
+        <path data-name="Left Arrow" class="arrow"
+          d="M129.01,311.107a2.45,2.45,0,0,1-3.536,0L114.868,300.5l10.606-10.607a2.5,2.5,0,1,1,3.536,3.536l-7.071,7.071,7.071,7.071A2.449,2.449,0,0,1,129.01,311.107Z"
+          transform="translate(-114.875 -289.125)" />
+      </svg>
+    </button>
 
-    <div id="photo">
-      <div class="gray-container">
-        <h1 id="photo-title"></h1>
-        <p id="photo-description"></p>
-      </div>
-    </div>
+    <figure>
+      <img id="photo" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fdcdde66672659.5b92e224c0fc6.jpg"
+        alt="bird-eye view of a church and pine trees at night">
+      <figcaption>
+        <h1 id="photo-title">Night scene</h1>
+        <p id="photo-description">bird-eye view of a church and pine trees at night</p>
+      </figcaption>
+    </figure>
 
     <!-- right arrow -->
-    <nav class="right-container" role="navigation" aria-label="right">
-      <button id="right-button" data-message="To the right">
-        <svg id="right-arrow" xmlns="http://www.w3.org/2000/svg" width="14.906" height="22.75"
-          viewBox="0 0 14.906 22.75">
-          <path data-name="Right Arrow" class="arrow"
-            d="M129.01,311.107a2.45,2.45,0,0,1-3.536,0L114.868,300.5l10.606-10.607a2.5,2.5,0,1,1,3.536,3.536l-7.071,7.071,7.071,7.071A2.449,2.449,0,0,1,129.01,311.107Z"
-            transform="translate(-114.875 -289.125)" />
-        </svg>
-      </button>
-    </nav>
-
+    <button id="right-button" data-message="To the right">
+      <svg id="right-arrow" xmlns="http://www.w3.org/2000/svg" width="14.906" height="22.75" viewBox="0 0 14.906 22.75">
+        <path data-name="Right Arrow" class="arrow"
+          d="M129.01,311.107a2.45,2.45,0,0,1-3.536,0L114.868,300.5l10.606-10.607a2.5,2.5,0,1,1,3.536,3.536l-7.071,7.071,7.071,7.071A2.449,2.449,0,0,1,129.01,311.107Z"
+          transform="translate(-114.875 -289.125)" />
+      </svg>
+    </button>
   </main>
+
+  <aside class="thumbnails"></aside>
 
   <footer>
     <p>Photography by
