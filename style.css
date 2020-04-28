@@ -21,7 +21,7 @@ body {
 
 figure {
   position: relative;
-  width: 70vw;
+  width: 50vw;
 }
 
 img {
@@ -39,6 +39,7 @@ figcaption {
 }
 
 .arrow {
+  fill: #4e4e4e;
   fill-rule: evenodd;
 }
 
