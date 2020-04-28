@@ -23,3 +23,29 @@ const images = [
 		description: "night scenery of street reflecting neon pink harsh artificial light after rain with flying seagulls"
 	}
 ];
+
+let photo = document.querySelector("#photo");
+let photoTitle = document.querySelector("#photo-title");
+let photoDescription = document.querySelector("#photo-description");
+let leftButton = document.querySelector("#left-button");
+let rightButton = document.querySelector("#right-button");
+
+let currentIndex = 0;
+
+rightButton.addEventListener("click", function() {
+	currentIndex += 1;
+	currentIndex >= images.length ? currentIndex = 0 : currentIndex;
+	photo.src = images[currentIndex].source;
+	photoTitle.innerText = images[currentIndex].title;
+	photoDescription.innerText = images[currentIndex].description;
+	console.log(currentIndex);
+});
+
+leftButton.addEventListener("click", function() {
+	currentIndex -= 1;
+	currentIndex < 0 ? currentIndex = images.length-1 : currentIndex;
+	photo.src = images[currentIndex].source;
+	photoTitle.innerText = images[currentIndex].title;
+	photoDescription.innerText = images[currentIndex].description;
+	console.log(currentIndex);
+});
