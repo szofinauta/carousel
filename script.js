@@ -87,6 +87,12 @@ function generateThumbnails() {
     thumbnailImage.addEventListener('mouseout', function() {
       thumbnailCaption.style.opacity = 0;
     });
+
+    thumbnailImage.addEventListener('click', function() {
+      photo.src = thumbnailImage.src;
+      photoTitle.innerText = thumbnailTitle.innerText;
+      photoDescription.innerText = thumbnailImage.alt;
+    });
   }
 
   thumbnails.appendChild(thumbnailFigure);
